@@ -1,0 +1,65 @@
+* {
+  margin: 0; 
+  padding: 0; 
+}
+
+.ciel {
+  height: 50vh; 
+  width: 100%; 
+  background-image: url('../img/ciel.jpg');
+}
+
+.horizon {
+  height: 50vh; 
+  width: 100%; 
+  background-image: url('../img/sable.jpg'); 
+  border-top: 5px solid black; 
+}
+
+.michelle {
+  z-index: 1; 
+  position: absolute;
+  left: 0px; 
+  bottom: 250px; 
+}
+
+.michelle {
+  width: 300px; 
+}
+
+.antiMich {
+  height: 60px;
+  width: 60px; 
+  background-color: red; 
+  z-index: 1; 
+  position: absolute;
+  bottom: 370px; 
+  right: 0;
+  animation: antiMove 2s infinite;
+}
+
+.jump {
+  animation: jump 1.5s;
+}
+
+
+@keyframes jump {
+  0% {
+    bottom: 250px;
+  }
+  50% {
+    bottom: 350px;
+  }
+  100% {
+    bottom: 250px; 
+  }
+}
+
+@keyframes antiMove{
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 100%;
+  }
+}
